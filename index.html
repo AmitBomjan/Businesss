@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelCraft Digital - Transform Your Business</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">PixelCraft Digital</a>
+            <ul class="nav-links">
+                <li><a onclick="showPage('home')">Home</a></li>
+                <li><a onclick="showPage('services')">Services</a></li>
+                <li><a onclick="showPage('about')">About</a></li>
+                <li><a onclick="showPage('portfolio')">Portfolio</a></li>
+                <li><a onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Transform Your Digital Presence</h1>
+                <p>We create stunning websites, powerful brands, and digital experiences that drive results for your business.</p>
+                <a href="#" class="cta-button" onclick="showPage('services')">Explore Our Services</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Page -->
+    <div id="services" class="page">
+        <div class="container fade-in">
+            <h2 class="page-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card" onclick="openServiceModal('web-design')">
+                    <div class="service-icon">🎨</div>
+                    <h3>Web Design</h3>
+                    <p>Creating beautiful, responsive websites that capture your brand essence and engage your audience effectively.</p>
+                </div>
+                <div class="service-card" onclick="openServiceModal('web-development')">
+                    <div class="service-icon">⚡</div>
+                    <h3>Web Development</h3>
+                    <p>Building fast, secure, and scalable web applications using the latest technologies and best practices.</p>
+                </div>
+                <div class="service-card" onclick="openServiceModal('mobile-apps')">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Apps</h3>
+                    <p>Developing native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+                </div>
+                <div class="service-card" onclick="openServiceModal('digital-marketing')">
+                    <div class="service-icon">🚀</div>
+                    <h3>Digital Marketing</h3>
+                    <p>Comprehensive digital marketing strategies to boost your online presence and drive conversions.</p>
+                </div>
+                <div class="service-card" onclick="openServiceModal('brand-identity')">
+                    <div class="service-icon">💎</div>
+                    <h3>Brand Identity</h3>
+                    <p>Creating memorable brand identities that resonate with your target audience and stand out from competitors.</p>
+                </div>
+                <div class="service-card" onclick="openServiceModal('maintenance')">
+                    <div class="service-icon">🔧</div>
+                    <h3>Maintenance</h3>
+                    <p>Ongoing support and maintenance to keep your digital assets running smoothly and up-to-date.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <div class="container fade-in">
+            <h2 class="page-title">About PixelCraft Digital</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who We Are</h3>
+                    <p>PixelCraft Digital is a creative agency passionate about transforming businesses through innovative digital solutions. Founded in 2020, we've helped over 200 companies establish their digital presence and achieve their online goals.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>To empower businesses with cutting-edge digital solutions that drive growth, enhance user experiences, and create lasting connections between brands and their audiences.</p>
+                    
+                    <h3>Why Choose Us</h3>
+                    <p>We combine creativity with technical expertise to deliver exceptional results. Our team of designers, developers, and marketers work collaboratively to ensure every project exceeds expectations.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <span>Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span>Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span>Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span>Support Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Page -->
+    <div id="portfolio" class="page">
+        <div class="container fade-in">
+            <h2 class="page-title">Our Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">🏢</div>
+                    <div class="portfolio-content">
+                        <h3>TechCorp Website</h3>
+                        <p>A modern corporate website with interactive features and responsive design for a leading technology company.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">🛍️</div>
+                    <div class="portfolio-content">
+                        <h3>Fashion E-commerce</h3>
+                        <p>Complete e-commerce solution with payment integration, inventory management, and customer portal.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">🍕</div>
+                    <div class="portfolio-content">
+                        <h3>Restaurant App</h3>
+                        <p>Mobile app for food ordering with real-time tracking, payment integration, and loyalty program.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">🏥</div>
+                    <div class="portfolio-content">
+                        <h3>Healthcare Platform</h3>
+                        <p>Comprehensive healthcare management system with patient portals and appointment scheduling.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">🎓</div>
+                    <div class="portfolio-content">
+                        <h3>Educational Portal</h3>
+                        <p>Online learning platform with interactive courses, progress tracking, and certification system.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">💰</div>
+                    <div class="portfolio-content">
+                        <h3>FinTech Dashboard</h3>
+                        <p>Financial analytics dashboard with real-time data visualization and reporting capabilities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="page">
+        <div class="container fade-in">
+            <h2 class="page-title">Get In Touch</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service" style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 10px; font-size: 1rem;">
+                            <option value="">Select a service</option>
+                            <option value="web-design">Web Design</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="mobile-apps">Mobile Apps</option>
+                            <option value="digital-marketing">Digital Marketing</option>
+                            <option value="brand-identity">Brand Identity</option>
+                            <option value="maintenance">Maintenance</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="service-modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeServiceModal()">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon">🎨</div>
+                <h2 class="modal-title" id="modalTitle">Web Design</h2>
+            </div>
+            <div class="service-details" id="serviceDetails">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+ <script src="script.js"></script>
+</body>
+</html>
